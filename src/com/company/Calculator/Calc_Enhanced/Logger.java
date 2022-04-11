@@ -6,7 +6,7 @@ public class Logger {
 
         if (do_i_print) {
 
-            System.out.println("The result is: " + result);
+            System.out.println("\nThe result is: " + result);
 
         }
 

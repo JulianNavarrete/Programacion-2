@@ -47,7 +47,7 @@ class Menu {
     }
 
     public static Integer[] listToArray(List<Integer> numbers) {
-        System.out.println(numbers);
+        // System.out.println(numbers);
         return numbers.toArray(new Integer[0]);
     }
 

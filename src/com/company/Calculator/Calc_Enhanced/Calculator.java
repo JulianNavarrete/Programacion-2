@@ -39,11 +39,12 @@ public class Calculator {
 
     public static int sub(Integer ... numbers) {
 
-        Integer result = 0;
+        Integer result = numbers[0];
+        Integer[] modified_numbers = Arrays.copyOfRange(numbers, 1, numbers.length);
 
-        for (Integer num:numbers){
+        for (Integer x:modified_numbers){
 
-            result = result - num;
+            result = result - x;
 
         }
 
@@ -55,7 +56,7 @@ public class Calculator {
     public static int div(Integer ... numbers) {
 
         Integer result = numbers[0];
-        Integer[] modified_numbers = Arrays.copyOfRange(numbers, 0, numbers.length);
+        Integer[] modified_numbers = Arrays.copyOfRange(numbers, 1, numbers.length);
 
         for (Integer num:modified_numbers){
 
