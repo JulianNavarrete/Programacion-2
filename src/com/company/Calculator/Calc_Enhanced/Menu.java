@@ -1,4 +1,4 @@
-package com.company.Calculator.Calc_Enhanced;
+package com.company.Calc_Enhanced;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,12 +25,12 @@ class Menu {
         numbers.add(numb);
         while (!exit_readoption) {
             // num and operator input
-            System.out.print("Enter a number: ");
-            String num_red = myObj.next();
-            System.out.println("Enter an operator: ");
+            System.out.print("Enter an operator: ");
             String op_red = myObj.next();
 
-            if (!num_red. equals("exit") || !op_red. equals("exit")){
+            if (!op_red. equals("=")){
+                System.out.print("Enter a number: ");
+                String num_red = myObj.next();
                 Integer num = Integer.valueOf(num_red);
                 numbers.add(num);
                 operators.add(op_red);
@@ -52,7 +52,7 @@ class Menu {
     }
 
     private static void processOpt(String[] operators, Integer[] numbers) {
-        int result = 0;
+        int result = numbers[0];
         int i=0;
         boolean do_i_print = true;
 

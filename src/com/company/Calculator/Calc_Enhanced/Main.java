@@ -1,4 +1,4 @@
-package com.company.Calculator.Calc_Enhanced;
+package com.company.Calc_Enhanced;
 
 public class Main {
 

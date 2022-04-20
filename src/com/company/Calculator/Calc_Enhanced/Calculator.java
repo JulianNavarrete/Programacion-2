@@ -1,4 +1,4 @@
-package com.company.Calculator.Calc_Enhanced;
+package com.company.Calc_Enhanced;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
